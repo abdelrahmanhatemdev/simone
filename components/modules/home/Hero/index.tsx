@@ -11,11 +11,11 @@ import Image from "next/image";
 
 const slides = [
   { name: "CATERINA ADOLFO", imageSrc: "hero-1", category: "Furnishing" },
-  { name: "ENZO", imageSrc: "hero-2", category: "Architecture" },
-  { name: "SOFIA", imageSrc: "hero-3", category: "Interior Design" },
-  { name: "LUCA", imageSrc: "hero-4", category: "Product Design" },
+  { name: "ENZO", imageSrc: "hero-2", category: "Spaces" },
+  { name: "SOFIA", imageSrc: "hero-3", category: "Product Design" },
+  { name: "LUCA", imageSrc: "hero-4", category: "Interior Design" },
   { name: "GIULIA", imageSrc: "hero-5", category: "Lighting" },
-  { name: "MARCO", imageSrc: "hero-6", category: "Spaces" },
+  { name: "MARCO", imageSrc: "hero-6", category: "Architecture" },
 ];
 
 function Hero() {
@@ -30,9 +30,11 @@ function Hero() {
           el: ".custom-pagination",
           clickable: true,
           renderBullet: (index, className) =>
-            `<div class="${className} flex flex-col gap-3 justify-center items-center cursor-pointer"><span class="w-2 h-2 bg-white rounded-full flex items-center justify-center text-[0px]">0${index + 1}</span><span></span></div>`,
+            `<div class="${className} flex flex-col gap-3 justify-center items-center cursor-pointer"><span class="w-2 h-2 bg-white rounded-full flex items-center justify-center text-[0px]">0${
+              index + 1
+            }</span><span></span></div>`,
         }}
-        autoplay={{ delay: 5000 }}
+        // autoplay={{ delay: 5000 }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
@@ -48,21 +50,21 @@ function Hero() {
                 alt=""
                 height={1080}
                 width={1920}
-                className="opacity-80"
+                className="opacity-80 h-full object-cover"
               />
-              <div className="w-[80vw] lg:w-[50vw] absolute z-10 bottom-[40vh] start-[27vw] flex flex-col gap-10">
-                <span className="font-rajdhani text-2xl tracking-widest">
+              <div className="w-[80vw] lg:w-[50vw] absolute z-10 bottom-[38vh] start-[5vw] md:start-[27vw] flex flex-col gap-4 lg:gap-[1vw]">
+                <span className="font-rajdhani lg:text-[1.5vw] md:text-[2.5vw] tracking-widest">
                   {slide.category}
                 </span>
-                <h3 className="font-black text-8xl font-cormorant-garamond lg:max-w-64">
+                <h3 className="font-black text-[10vw] sm:lg:text-[5.2vw] leading-[10vw] sm:leading-[8vw] lg:leading-[5.5vw] font-cormorant-garamond max-w-64">
                   {slide.name}
                 </h3>
               </div>
             </div>
           </SwiperSlide>
         ))}
-        <div className="absolute bottom-[36vh] start-[27vw] z-10 bg-white h-[1px] w-[65vw]"></div>
       </Swiper>
+      <div className="absolute bottom-[36vh] start-[5vw] md:start-[27vw] z-10 bg-white h-[1px] w-[75vw] md:w-[62vw]"></div>
 
       <div className="absolute z-10 bottom-[10vh] end-[14vw] flex items-center gap-10 font-cormorant-garamond tracking-widest">
         <button className="prev-button cursor-pointer">Previous</button>
@@ -70,8 +72,7 @@ function Hero() {
         <button className="next-button cursor-pointer">Next</button>
       </div>
       <div className="custom-pagination absolute z-10 bottom-0 left-[14vw] flex items-end w-fit gap-4 text-xs"></div>
-   
-     </div>
+    </div>
   );
 }
 export default memo(Hero);
