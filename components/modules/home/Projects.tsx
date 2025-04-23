@@ -10,30 +10,15 @@ import { HiOutlineSlash } from "react-icons/hi2";
 
 const slides = [
   {
-    name: "MODERN SOFA",
-    imageSrc: "products-1",
-    category: "Cozy velvet seating",
-  },
-  {
-    name: "ELEGANT LAMP",
-    imageSrc: "products-2",
-    category: "Warm ambient light",
-  },
-  {
-    name: "WOODEN TABLE",
-    imageSrc: "products-3",
-    category: "Minimal rustic finish",
-  },
-  {
-    name: "WALL ART",
-    imageSrc: "products-4",
-    category: "Abstract canvas beauty",
-  },
-  { name: "RUG SET", imageSrc: "products-5", category: "Soft neutral tones" },
-  { name: "BOOKSHELF", imageSrc: "products-6", category: "Open sleek storage" },
+    name: "Grande Villa",
+    spec: "Large Space",
+    city: "Cornell",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    imageSrc: "project-1",
+  }
 ];
 
-function Products() {
+function Projects() {
   const [currentSlide, setcurrentSlide] = useState(1);
   return (
     <section className="mt-20 md:mt-60 px-[5vw] md:px-[10vw] relative">
@@ -164,4 +149,4 @@ function Products() {
     </section>
   );
 }
-export default memo(Products);
+export default memo(Projects);
