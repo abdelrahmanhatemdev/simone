@@ -63,6 +63,7 @@ function Products() {
               speed={500}
               loop={true}
               initialSlide={slides.length - 1}
+              allowTouchMove={false}
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
@@ -72,7 +73,7 @@ function Products() {
                       alt=""
                       height={1080}
                       width={1920}
-                      className="h-full object-cover opacity-90"
+                      className="h-full object-cover"
                     />
                   </div>
                 </SwiperSlide>
@@ -92,6 +93,7 @@ function Products() {
               speed={500}
               loop={true}
               initialSlide={0}
+              allowTouchMove={false}
               onSlideChange={(swiper) => setcurrentSlide(swiper.realIndex + 1)}
             >
               {slides.map((slide, index) => (
@@ -102,7 +104,7 @@ function Products() {
                       alt=""
                       height={1080}
                       width={1920}
-                      className="h-full object-cover opacity-90"
+                      className="h-full object-cover"
                     />
                     <div className="w-[80%] flex flex-col gap-1 absolute z-10 bottom-[5%] start-[5%]">
                       <h3 className="font-black font-cormorant-garamond text-[5vw] md:text-[2vw] leading-[5vw] md:leading-[2vw]">
@@ -130,6 +132,7 @@ function Products() {
               speed={500}
               loop={true}
               initialSlide={1}
+              allowTouchMove={false}
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
@@ -139,7 +142,7 @@ function Products() {
                       alt=""
                       height={1080}
                       width={1920}
-                      className="h-full object-cover opacity-90"
+                      className="h-full object-cover"
                     />
                   </div>
                 </SwiperSlide>
