@@ -13,9 +13,26 @@ const slides = [
     name: "Grande Villa",
     spec: "Large Space",
     city: "Cornell",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    description:
+      "A modern villa blending clean geometry with warm materials, designed for luxurious yet minimal living.",
     imageSrc: "project-1",
-  }
+  },
+  {
+    name: "Loft Serenity",
+    spec: "Urban Loft",
+    city: "Brooklyn",
+    description:
+      "Industrial textures meet cozy tones in this open-concept loft tailored for creative professionals.",
+    imageSrc: "project-2",
+  },
+  {
+    name: "Casa Verde",
+    spec: "Eco Home",
+    city: "Lisbon",
+    description:
+      "Sustainable materials and natural light define this tranquil home inspired by Mediterranean living.",
+    imageSrc: "project-3",
+  },
 ];
 
 function Projects() {
@@ -24,12 +41,7 @@ function Projects() {
     <section className="mt-20 md:mt-60 px-[5vw] md:px-[10vw] relative">
       <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase  md:ms-20">
         <p className="border-b border-neutral-600 pb-2 w-fit pe-16">Featured</p>
-        <p>Products</p>
-      </div>
-      <div className="w-full flex justify-center sm:justify-end gap-5 md:gap-20 font-cormorant-garamond text-[5vw] sm:text-[3vw] md:text-[1.3rem] mt-20 md:mt-40 sm:pe-20 font-black text-neutral-400">
-        <p className="text-white">Furniture</p>
-        <p>Furnitshing</p>
-        <p>Lighting</p>
+        <p>Projects</p>
       </div>
       <div className="absolute -z-10 end-[2vw] top-[30vw] md:end-[16vw] md:top-16 w-[70vw] md:w-[50vw] lg:w-[35vw] h-[70vh] md:h-[80vh] bg-olive"></div>
 
@@ -51,14 +63,16 @@ function Projects() {
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                  <div className="w-full h-full relative overflow-hidden">
-                    <Image
-                      src={`/products/${slide.imageSrc}.webp`}
-                      alt=""
-                      height={1080}
-                      width={1920}
-                      className="h-full object-cover opacity-90"
-                    />
+                  <div className="flex flex-col">
+                    <h3 className="font-black font-cormorant-garamond text-[5vw] md:text-[2vw] leading-[5vw] md:leading-[2vw]">
+                      {slide.name}
+                    </h3>
+                    <p>{slide.spec}</p>
+                    <p>{slide.city}</p>
+                    <span className="font-rajdhani tracking-widest text-[3vw] md:text-[1.3vw]">
+                      {slide.description}
+                    </span>
+                    <span>Read More</span>
                   </div>
                 </SwiperSlide>
               ))}
@@ -83,44 +97,7 @@ function Projects() {
                 <SwiperSlide key={index}>
                   <div className="w-full h-full relative overflow-hidden">
                     <Image
-                      src={`/products/${slide.imageSrc}.webp`}
-                      alt=""
-                      height={1080}
-                      width={1920}
-                      className="h-full object-cover opacity-90"
-                    />
-                    <div className="w-[80%] flex flex-col gap-1 absolute z-10 bottom-[5%] start-[5%]">
-                      <h3 className="font-black font-cormorant-garamond text-[5vw] md:text-[2vw] leading-[5vw] md:leading-[2vw]">
-                        {slide.name}
-                      </h3>
-                      <span className="font-rajdhani tracking-widest text-[3vw] md:text-[1.3vw]">
-                        {slide.category}
-                      </span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-          <div className="w-[26%] h-[24%] mt-[10%] hidden sm:block">
-            <Swiper
-              modules={[Navigation]}
-              spaceBetween={1}
-              slidesPerView={1}
-              navigation={{
-                nextEl: ".products-next-button",
-                prevEl: ".products-prev-button",
-              }}
-              className="w-full h-full"
-              speed={500}
-              loop={true}
-              initialSlide={1}
-            >
-              {slides.map((slide, index) => (
-                <SwiperSlide key={index}>
-                  <div className="w-full h-full relative overflow-hidden">
-                    <Image
-                      src={`/products/${slide.imageSrc}.webp`}
+                      src={`/projects/${slide.imageSrc}.webp`}
                       alt=""
                       height={1080}
                       width={1920}
