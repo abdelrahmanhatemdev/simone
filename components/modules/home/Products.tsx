@@ -1,11 +1,12 @@
 "use client";
-import { memo } from "react";
+import { memo, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
+import { HiOutlineSlash } from "react-icons/hi2";
 
 const slides = [
   {
@@ -33,117 +34,132 @@ const slides = [
 ];
 
 function Products() {
+  const [currentSlide, setcurrentSlide] = useState(1);
   return (
-    <section className="py-60 px-40 relative">
-      <div></div>
-      Products
-      <div className="flex gap-10">
-        <div className="w-[20vw] h-[14vw] mt-[10vh]">
-          <Swiper
-            modules={[Navigation]}
-            spaceBetween={1}
-            slidesPerView={1}
-            navigation={{
-              nextEl: ".products-next-button",
-              prevEl: ".products-prev-button",
-            }}
-            className="w-full h-full"
-            speed={800}
-            loop={true}
-            initialSlide={slides.length - 1}
-          >
-            {slides.map((slide, index) => (
-              <SwiperSlide key={index}>
-                <div className="w-full h-full relative overflow-hidden">
-                  <Image
-                    src={`/products/${slide.imageSrc}.webp`}
-                    alt=""
-                    height={1080}
-                    width={1920}
-                    className="h-full object-cover opacity-80"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <div className="w-[32vw] h-[25vw]">
-
-        
-        <Swiper
-          modules={[Navigation]}
-          spaceBetween={1}
-          slidesPerView={1}
-          navigation={{
-            nextEl: ".products-next-button",
-            prevEl: ".products-prev-button",
-          }}
-          className="w-full h-full"
-          speed={800}
-          loop={true}
-          initialSlide={0}
-        >
-          {slides.map((slide, index) => (
-            <SwiperSlide key={index}>
-              <div className="w-full h-full relative overflow-hidden">
-                <Image
-                  src={`/products/${slide.imageSrc}.webp`}
-                  alt=""
-                  height={1080}
-                  width={1920}
-                  className="h-full object-cover opacity-80"
-                />
-                <div className="w-[80vw] flex flex-col gap-1 absolute z-10 bottom-10 start-10">
-                  <h3 className="font-black font-cormorant-garamond text-[2vw] leading-[2vw]">
-                    {slide.name}
-                  </h3>
-                  <span className="font-rajdhani tracking-widest">
-                    {slide.category}
-                  </span>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        </div>
-        <div className="w-[20vw] h-[14vw] mt-[18vh]">
-          <Swiper
-            modules={[Navigation]}
-            spaceBetween={1}
-            slidesPerView={1}
-            navigation={{
-              nextEl: ".products-next-button",
-              prevEl: ".products-prev-button",
-            }}
-            className="w-full h-full"
-            speed={800}
-            loop={true}
-            initialSlide={1}
-          >
-            {slides.map((slide, index) => (
-              <SwiperSlide key={index}>
-                <div className="w-full h-full relative overflow-hidden">
-                  <Image
-                    src={`/products/${slide.imageSrc}.webp`}
-                    alt=""
-                    height={1080}
-                    width={1920}
-                    className="h-full object-cover opacity-80"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+    <section className="my-20 md:my-60 px-[5vw] md:px-[10vw] relative">
+      <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase mb-20 md:mb-40 md:ms-20">
+        <p className="border-b border-neutral-600 pb-2 w-fit pe-16">Featured</p>
+        <p>Products</p>
       </div>
-      <div className="absolute z-10 bottom-[10vh] end-[14vw] flex items-center gap-10 font-cormorant-garamond tracking-widest">
-        <button className="products-prev-button cursor-pointer">
-          <IoChevronBackOutline />
-        </button>
-        <div className="h-[1px] w-12 lg:w-[3vw] bg-white"></div>
-        <button className="products-next-button cursor-pointer">
-          <IoChevronForwardOutline />
-        </button>
+      <div className="w-full flex justify-center sm:justify-end gap-5 md:gap-20 font-cormorant-garamond text-[5vw] sm:text-[3vw] md:text-[1.3rem] mb-16 sm:mb-32 sm:pe-20 font-black text-neutral-400">
+        <p className="text-white">Furniture</p>
+        <p>Furnitshing</p>
+        <p>Lighting</p>
+      </div>
+      <div className="absolute -z-10 end-[2vw] top-[30vw] md:end-[16vw] md:top-16 w-[70vw] md:w-[50vw] lg:w-[35vw] h-[70vh] md:h-[80vh] bg-olive"></div>
+
+      <div className="flex flex-col gap-20 md:gap-40 md:w-[76vw] w-full">
+        <div className="flex justify-between">
+          <div className="w-[26%] h-[24%] mt-[6%] hidden sm:block">
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={1}
+              slidesPerView={1}
+              navigation={{
+                nextEl: ".products-next-button",
+                prevEl: ".products-prev-button",
+              }}
+              className="w-full h-full"
+              speed={500}
+              loop={true}
+              initialSlide={slides.length - 1}
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="w-full h-full relative overflow-hidden">
+                    <Image
+                      src={`/products/${slide.imageSrc}.webp`}
+                      alt=""
+                      height={1080}
+                      width={1920}
+                      className="h-full object-cover opacity-90"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className=" w-full h-[70vw] sm:w-[43%] sm:h-[35%]">
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={1}
+              slidesPerView={1}
+              navigation={{
+                nextEl: ".products-next-button",
+                prevEl: ".products-prev-button",
+              }}
+              className="w-full h-full"
+              speed={500}
+              loop={true}
+              initialSlide={0}
+              onSlideChange={(swiper) => setcurrentSlide(swiper.realIndex + 1)}
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="w-full h-full relative overflow-hidden">
+                    <Image
+                      src={`/products/${slide.imageSrc}.webp`}
+                      alt=""
+                      height={1080}
+                      width={1920}
+                      className="h-full object-cover opacity-90"
+                    />
+                    <div className="w-[80%] flex flex-col gap-1 absolute z-10 bottom-[5%] start-[5%]">
+                      <h3 className="font-black font-cormorant-garamond text-[5vw] md:text-[2vw] leading-[5vw] md:leading-[2vw]">
+                        {slide.name}
+                      </h3>
+                      <span className="font-rajdhani tracking-widest text-[3vw] md:text-[1.3vw]">
+                        {slide.category}
+                      </span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          <div className="w-[26%] h-[24%] mt-[10%] hidden sm:block">
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={1}
+              slidesPerView={1}
+              navigation={{
+                nextEl: ".products-next-button",
+                prevEl: ".products-prev-button",
+              }}
+              className="w-full h-full"
+              speed={500}
+              loop={true}
+              initialSlide={1}
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  <div className="w-full h-full relative overflow-hidden">
+                    <Image
+                      src={`/products/${slide.imageSrc}.webp`}
+                      alt=""
+                      height={1080}
+                      width={1920}
+                      className="h-full object-cover opacity-90"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+        <div className="w-full flex items-center justify-center gap-2 tracking-widest">
+          <button className="products-prev-button cursor-pointer">
+            <IoChevronBackOutline size={30} />
+          </button>
+          <div className="flex gap-2 text-lg items-center justify-center">
+            <span>{currentSlide}</span>
+            <HiOutlineSlash size={25} />
+            <span className=" text-neutral-500">6</span>
+          </div>
+          <button className="products-next-button cursor-pointer">
+            <IoChevronForwardOutline size={30} />
+          </button>
+        </div>
       </div>
     </section>
   );

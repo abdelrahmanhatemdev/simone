@@ -11,7 +11,7 @@ const rajdhani = Rajdhani({
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--font-cormorant-garamond",
   subsets: ["latin"],
-  weight: ["700"]
+  weight: ["700", "400"]
 });
 
 export const metadata: Metadata = {
