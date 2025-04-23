@@ -36,19 +36,19 @@ const slides = [
 function Products() {
   const [currentSlide, setcurrentSlide] = useState(1);
   return (
-    <section className="my-20 md:my-60 px-[5vw] md:px-[10vw] relative">
-      <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase mb-20 md:mb-40 md:ms-20">
+    <section className="my-20 md:mt-60 px-[5vw] md:px-[10vw] relative">
+      <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase  md:ms-20">
         <p className="border-b border-neutral-600 pb-2 w-fit pe-16">Featured</p>
         <p>Products</p>
       </div>
-      <div className="w-full flex justify-center sm:justify-end gap-5 md:gap-20 font-cormorant-garamond text-[5vw] sm:text-[3vw] md:text-[1.3rem] mb-16 sm:mb-32 sm:pe-20 font-black text-neutral-400">
+      <div className="w-full flex justify-center sm:justify-end gap-5 md:gap-20 font-cormorant-garamond text-[5vw] sm:text-[3vw] md:text-[1.3rem] mt-20 md:mt-40 sm:pe-20 font-black text-neutral-400">
         <p className="text-white">Furniture</p>
         <p>Furnitshing</p>
         <p>Lighting</p>
       </div>
       <div className="absolute -z-10 end-[2vw] top-[30vw] md:end-[16vw] md:top-16 w-[70vw] md:w-[50vw] lg:w-[35vw] h-[70vh] md:h-[80vh] bg-olive"></div>
 
-      <div className="flex flex-col gap-20 md:gap-40 md:w-[76vw] w-full">
+      <div className="flex flex-col gap-20 md:gap-40 md:w-[76vw] w-full mt-16 sm:mt-32">
         <div className="flex justify-between">
           <div className="w-[26%] h-[24%] mt-[6%] hidden sm:block">
             <Swiper
