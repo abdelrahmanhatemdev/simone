@@ -40,7 +40,7 @@ function Projects() {
   return (
     <section className="mt-20 md:mt-96 ps-[5vw] md:ps-[10vw] relative">
       <div className="flex gap-0 justify-end w-full">
-        <div className="w-[20%] h-[50%] mt-64 flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase -rotate-90">
+        <div className="w-[20%] h-[50%] mt-64 flex flex-col gap-2 font-cormorant-garamond tracking-[.4rem] text-lg uppercase -rotate-90">
           <p className="border-b border-neutral-600 pb-2 w-fit pe-16">
             Featured
           </p>
@@ -63,13 +63,13 @@ function Projects() {
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-2">
                   <h3 className="font-black font-cormorant-garamond text-[5vw] md:text-[2vw] leading-[5vw] md:leading-[2vw]">
                     {slide.name}
                   </h3>
-                  <p>{slide.spec}</p>
-                  <p>{slide.city}</p>
-                  <span className="font-rajdhani tracking-widest text-[3vw] md:text-[1.3vw]">
+                  <p className="text-xl">{slide.spec}</p>
+                  <p className="my-4">{slide.city}</p>
+                  <span className="text-[3vw] md:text-[1vw]">
                     {slide.description}
                   </span>
                   <span>Read More</span>
@@ -77,7 +77,7 @@ function Projects() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="w-full flex items-center justify-center gap-2 tracking-widest">
+          <div className="w-full flex items-center gap-2 tracking-widest">
             <button className="products-prev-button cursor-pointer">
               <IoChevronBackOutline size={30} />
             </button>
@@ -124,7 +124,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="absolute -z-10 end-[2vw] top-[30vw] md:end-[16vw] md:top-16 w-[70vw] md:w-[50vw] lg:w-[35vw] h-[70vh] md:h-[80vh] bg-olive"></div>
+      <div className="absolute -z-10 end-[2vw] top-[30vw] md:end-[8vw] md:top-[25vw] w-[70vw] md:w-[45vw] h-[50vh] md:h-[45vh] bg-olive"></div>
     </section>
   );
 }
