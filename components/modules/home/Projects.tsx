@@ -123,6 +123,7 @@ function Projects() {
           </Swiper>
         </div>
       </div>
+      
 
       <div className="absolute -z-10 end-[2vw] top-[30vw] md:end-[8vw] md:top-[25vw] w-[70vw] md:w-[45vw] h-[50vh] md:h-[45vh] bg-olive"></div>
     </section>
