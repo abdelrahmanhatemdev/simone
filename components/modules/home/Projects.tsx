@@ -38,15 +38,15 @@ const slides = [
 function Projects() {
   const [currentSlide, setcurrentSlide] = useState(1);
   return (
-    <section className="mt-20 md:mt-96 ps-[5vw] md:ps-[10vw] relative">
-      <div className="flex gap-0 justify-end w-full">
-        <div className="w-[20%] h-[50%] mt-64 flex flex-col gap-2 font-cormorant-garamond tracking-[.4rem] text-lg uppercase -rotate-90">
+    <section className="mt-20 md:mt-96 px-[5vw] md:pe-0 md:ps-[10vw] relative">
+      <div className="flex md:gap-3 md:justify-end w-full flex-wrap">
+        <div className="w-auto md:w-[10%] order-1 md:order-1 h-[50%] mt-64 ms-7 md:ms-0 flex flex-col gap-2 font-cormorant-garamond tracking-[.4rem] text-md uppercase -rotate-90 origin-left">
           <p className="border-b border-neutral-600 pb-2 w-fit pe-16">
             Featured
           </p>
           <p>Projects</p>
         </div>
-        <div className="w-[30%] mt-64 hidden sm:block">
+        <div className="order-3 md:order-2 md:w-[20%] lg:w-[30%] w-full mt-5 md:mt-64 sm:block">
           <Swiper
             modules={[Navigation]}
             spaceBetween={1}
@@ -91,7 +91,7 @@ function Projects() {
             </button>
           </div>
         </div>
-        <div className="w-[40%] h-[70vw] sm:w-[50%] sm:h-[50%]">
+        <div className="order-2 md:order-3 w-full md:w-[60%] lg:w-[40%] mt-[20vw] md:mt-0 ">
           <Swiper
             modules={[Navigation]}
             spaceBetween={1}
@@ -123,9 +123,8 @@ function Projects() {
           </Swiper>
         </div>
       </div>
-      
 
-      <div className="absolute -z-10 end-[2vw] top-[30vw] md:end-[8vw] md:top-[25vw] w-[70vw] md:w-[45vw] h-[50vh] md:h-[45vh] bg-olive"></div>
+      <div className="absolute -z-10 end-[2vw] top-[30vw] md:end-[8vw] md:top-[25vw] w-[70vw] md:w-[45vw] h-[70vh] md:h-[45vh] bg-olive"></div>
     </section>
   );
 }
