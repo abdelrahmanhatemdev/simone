@@ -29,7 +29,7 @@ const news = [
 
 function News() {
   return (
-    <section className="mt-20 md:mt-[35vw] mx-5 flex flex-col items-end gap-40">
+    <section className="mt-40 md:mt-[35vw] mx-5 flex flex-col items-end gap-10 md:gap-40">
       <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase md:ms-20 md:me-24">
         <p className="border-b border-neutral-600 pb-2 w-fit pe-20 md:pe-40">Our</p>
         <p>News</p>

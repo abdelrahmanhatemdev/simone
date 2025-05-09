@@ -7,6 +7,7 @@ const Gallery = dynamic(() => import("@/components/modules/home/Gallery"));
 const Projects = dynamic(() => import("@/components/modules/home/Projects"));
 const News = dynamic(() => import("@/components/modules/home/News"));
 const Sample = dynamic(() => import("@/components/modules/home/Sample"));
+const About = dynamic(() => import("@/components/modules/home/About"));
 function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ function Home() {
       <Projects />
       <News />
       <Sample />
+      <About />
     </>
   );
 }
