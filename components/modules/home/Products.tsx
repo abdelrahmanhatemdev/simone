@@ -60,7 +60,7 @@ function Products() {
                 prevEl: ".products-prev-button",
               }}
               className="w-full h-full"
-              speed={500}
+              speed={800}
               loop={true}
               initialSlide={slides.length - 1}
               allowTouchMove={false}
@@ -90,7 +90,7 @@ function Products() {
                 prevEl: ".products-prev-button",
               }}
               className="w-full h-full"
-              speed={500}
+              speed={800}
               loop={true}
               initialSlide={0}
               allowTouchMove={false}
@@ -129,7 +129,7 @@ function Products() {
                 prevEl: ".products-prev-button",
               }}
               className="w-full h-full"
-              speed={500}
+              speed={800}
               loop={true}
               initialSlide={1}
               allowTouchMove={false}

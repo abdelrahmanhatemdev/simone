@@ -16,9 +16,9 @@ function About() {
       <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] items-center lg:p-10 gap-16">
         <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.4rem] text-md uppercase lg:-rotate-90">
           <p className="border-b border-neutral-600 pb-2 w-fit pe-16">
-            Featured
+            About
           </p>
-          <p>Projects</p>
+          <p>Us</p>
         </div>
         <div className="flex flex-col gap-10 lg:gap-24">
           <h2 className="text-4xl">Luxury Furniture Retail Network</h2>
