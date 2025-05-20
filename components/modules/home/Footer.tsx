@@ -16,9 +16,9 @@ function Footer() {
       <div className="flex flex-col gap-5 justify-center items-center">
         <p>Follow Us</p>
         <div className="flex gap-2">
-          <FaFacebookF size={18}/>
-          <FaInstagram size={18}/>
-          <FaTwitter size={18}/>
+          <FaFacebookF size={18} />
+          <FaInstagram size={18} />
+          <FaTwitter size={18} />
         </div>
       </div>
       <div className="flex flex-col sm:flex-row gap-3 justify-center items-center text-xs flex-wrap">
