@@ -130,7 +130,46 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #444;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 input:-webkit-autofill {
-    box-shadow: 0 0 0px 1000px #222 inset !important;
-    -webkit-text-fill-color: #eee !important;
-  }
+  box-shadow: 0 0 0px 1000px #222 inset !important;
+  -webkit-text-fill-color: #eee !important;
+}
+.drawer-content {
+  overscroll-behavior-x: contain; /* Prevent scroll chaining to parent */
+}
+
+/* Optional: Hide scrollbars for aesthetics */
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+.overflow-x-auto {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
