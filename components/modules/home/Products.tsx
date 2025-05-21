@@ -151,7 +151,7 @@ function Products() {
           </div>
         </div>
         <div className="w-full flex items-center justify-center gap-2 tracking-widest">
-          <button className="products-prev-button cursor-pointer">
+          <button className="products-prev-button cursor-pointer" aria-label="Prev">
             <IoChevronBackOutline size={30} />
           </button>
           <div className="flex gap-2 text-lg items-center justify-center">
@@ -159,7 +159,7 @@ function Products() {
             <HiOutlineSlash size={25} />
             <span className=" text-neutral-500">6</span>
           </div>
-          <button className="products-next-button cursor-pointer">
+          <button className="products-next-button cursor-pointer" aria-label="Next">
             <IoChevronForwardOutline size={30} />
           </button>
         </div>

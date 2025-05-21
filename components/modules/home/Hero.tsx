@@ -23,7 +23,10 @@ function Hero() {
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
-        navigation={{ nextEl: ".hero-next-button", prevEl: ".hero-prev-button" }}
+        navigation={{
+          nextEl: ".hero-next-button",
+          prevEl: ".hero-prev-button",
+        }}
         pagination={{
           el: ".custom-pagination",
           clickable: true,

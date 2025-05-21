@@ -39,7 +39,7 @@ function News() {
           <article key={i} className="flex flex-col gap-8">
             <h3 className="text-4xl">{item.title}</h3>
             <div className="flex flex-col gap-2">
-              <p className="text-neutral-500 tracking-wider text-xl">
+              <p className="text-neutral-400 tracking-wider text-xl">
                 {item.author}, {item.date}
               </p>
               <p className="leading-6 md:leading-8 xl:leading-10">{item.description}</p>

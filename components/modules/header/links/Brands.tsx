@@ -13,6 +13,7 @@ function Brands() {
   return (
     <HeaderDrawer
       title="Brands"
+      modal={true}
       trigger={
         <button className="flex gap-4 items-center lg:items-end cursor-pointer">
           <PiSquaresFourThin size={25} />
