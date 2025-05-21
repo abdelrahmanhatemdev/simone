@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 
 const Menu = dynamic(() => import("@/components/modules/header/links/Menu"));
 const Search = dynamic(() => import("@/components/modules/header/links/Search"));
+const InStock = dynamic(() => import("@/components/modules/header/links/InStock"));
 function Header() {
   return (
     <section className="fixed inset-0 z-20 flex justify-between mx-[5vw] md:mx-[8vw] mt-8 h-20">
@@ -23,12 +24,7 @@ function Header() {
             Brands
           </span>
         </button>
-        <button className="flex gap-4 items-center lg:items-end cursor-pointer">
-          <IoLockOpen />
-          <span className="uppercase text-neutral-400 tracking-widest text-sm hidden lg:block">
-            In Stock
-          </span>
-        </button>
+        <InStock/>
       </div>
     </section>
   );

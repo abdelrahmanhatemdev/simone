@@ -1,20 +1,16 @@
 import { DrawerClose } from "@/components/ui/drawer";
-import { Input } from "@/components/ui/input";
 import dynamic from "next/dynamic";
 const HeaderDrawer = dynamic(() => import("@/components/custom/HeaderDrawer"));
 import { memo } from "react";
 import {
-  FaFacebookF,
-  FaInstagram,
   FaSearch,
   FaTimes,
-  FaTwitter,
 } from "react-icons/fa";
 
 function Search() {
   return (
     <HeaderDrawer
-      title="Menu"
+      title="Search"
       trigger={
         <button className="flex gap-4 items-center lg:items-end cursor-pointer">
           <FaSearch />
