@@ -9,7 +9,10 @@ function Menu() {
     <HeaderDrawer
       title="Menu"
       trigger={
-        <button className="group cursor-pointer flex flex-col gap-3 lg:gap-4 w-12 lg:w-16 justify-center" aria-label="Menu">
+        <button
+          className="group cursor-pointer flex flex-col gap-3 lg:gap-4 w-12 lg:w-16 justify-center"
+          aria-label="Menu"
+        >
           <span className="w-[70%] h-[2px] bg-white block"></span>
           <span className="w-[70%] h-[1px] bg-white block group-hover:ms-3 lg:group-hover:ms-5 transition-all duration-300"></span>
           <span className="w-[70%] h-[1px] bg-white block"></span>

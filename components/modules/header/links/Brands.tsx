@@ -1,4 +1,3 @@
-
 import { DrawerClose } from "@/components/ui/drawer";
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -15,7 +14,10 @@ function Brands() {
       title="Brands"
       modal={true}
       trigger={
-        <button className="flex gap-4 items-center lg:items-end cursor-pointer">
+        <button
+          className="flex gap-4 items-center lg:items-end cursor-pointer"
+          aria-label="Brands"
+        >
           <PiSquaresFourThin size={25} />
           <span className="uppercase text-neutral-400 tracking-widest text-sm hidden lg:block">
             Brands

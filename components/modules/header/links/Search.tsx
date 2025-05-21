@@ -2,17 +2,17 @@ import { DrawerClose } from "@/components/ui/drawer";
 import dynamic from "next/dynamic";
 const HeaderDrawer = dynamic(() => import("@/components/custom/HeaderDrawer"));
 import { memo } from "react";
-import {
-  FaSearch,
-  FaTimes,
-} from "react-icons/fa";
+import { FaSearch, FaTimes } from "react-icons/fa";
 
 function Search() {
   return (
     <HeaderDrawer
       title="Search"
       trigger={
-        <button className="flex gap-4 items-center lg:items-end cursor-pointer">
+        <button
+          className="flex gap-4 items-center lg:items-end cursor-pointer"
+          aria-label="Search"
+        >
           <FaSearch />
           <span className="uppercase text-neutral-400 tracking-widest text-sm hidden lg:block">
             Search

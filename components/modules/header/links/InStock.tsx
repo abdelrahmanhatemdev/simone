@@ -11,7 +11,10 @@ function InStock() {
     <HeaderDrawer
       title="In Stock"
       trigger={
-        <button className="flex gap-4 items-center lg:items-end cursor-pointer">
+        <button
+          className="flex gap-4 items-center lg:items-end cursor-pointer"
+          aria-label="In Stock"
+        >
           <IoLockOpen />
           <span className="uppercase text-neutral-400 tracking-widest text-sm hidden lg:block">
             In Stock
@@ -30,7 +33,9 @@ function InStock() {
             </div>
           </DrawerClose>
           <div className="flex flex-col gap-0">
-            <label className="font-lg font-bold" htmlFor="name">Name</label>
+            <label className="font-lg font-bold" htmlFor="name">
+              Name
+            </label>
             <input
               type="text"
               id="name"
@@ -38,7 +43,9 @@ function InStock() {
             />
           </div>
           <div className="flex flex-col gap-0">
-            <label className="font-lg font-bold" htmlFor="email">E-mail</label>
+            <label className="font-lg font-bold" htmlFor="email">
+              E-mail
+            </label>
             <input
               type="text"
               id="email"
@@ -46,7 +53,9 @@ function InStock() {
             />
           </div>
           <div className="flex flex-col gap-0">
-            <label className="font-lg font-bold" htmlFor="phone">Phone Number</label>
+            <label className="font-lg font-bold" htmlFor="phone">
+              Phone Number
+            </label>
             <input
               type="text"
               id="phone"
@@ -54,7 +63,9 @@ function InStock() {
             />
           </div>
           <div className="flex flex-col gap-0">
-            <label className="font-lg font-bold" htmlFor="company">Company</label>
+            <label className="font-lg font-bold" htmlFor="company">
+              Company
+            </label>
             <input
               type="text"
               id="company"
@@ -62,11 +73,18 @@ function InStock() {
             />
           </div>
           <div className="flex gap-5 items-center mt-10">
-            <Checkbox className="cursor-pointer" id="newsletter"/>
-            <label className="font-lg font-bold cursor-pointer" htmlFor="newsletter">SUBSCRIBE TO NEWSLETTERS</label>
+            <Checkbox className="cursor-pointer" id="newsletter" />
+            <label
+              className="font-lg font-bold cursor-pointer"
+              htmlFor="newsletter"
+            >
+              SUBSCRIBE TO NEWSLETTERS
+            </label>
           </div>
           <div className="flex gap-5 items-center justify-end mt-10">
-            <button className="uppercase text-lg cursor-pointer">Request Stock</button>
+            <button className="uppercase text-lg cursor-pointer">
+              Request Stock
+            </button>
           </div>
         </form>
       </div>
