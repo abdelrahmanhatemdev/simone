@@ -3,7 +3,7 @@ import { memo } from "react";
 
 function About() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 w-full mt-40 md:mt-92 px-5 lg:p-10 gap-20 lg:gap-0">
+    <section className="grid grid-cols-1 md:grid-cols-2 w-full mt-40 md:mt-92 px-5 lg:p-10 gap-20 lg:gap-0" id="about">
       <div className="w-full md:w-[45vw] md:h-[55vw] ">
         <Image
           src={`/about/about.webp`}

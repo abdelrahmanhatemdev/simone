@@ -36,7 +36,7 @@ const slides = [
 function Products() {
   const [currentSlide, setcurrentSlide] = useState(1);
   return (
-    <section className="mt-20 md:mt-60 px-[5vw] md:px-[10vw] relative">
+    <section className="mt-20 md:mt-60 px-[5vw] md:px-[10vw] relative" id="products">
       <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase  md:ms-20">
         <p className="border-b border-neutral-600 pb-2 w-fit pe-16">Featured</p>
         <p>Products</p>

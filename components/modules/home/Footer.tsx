@@ -12,7 +12,7 @@ const contact = [
 
 function Footer() {
   return (
-    <section className="mx-5 mt-20 mb-40 flex flex-col gap-3">
+    <section className="mx-5 mt-20 mb-40 flex flex-col gap-3" id="contact">
       <div className="flex flex-col gap-5 justify-center items-center">
         <p>Follow Us</p>
         <div className="flex gap-2">

@@ -38,7 +38,7 @@ const slides = [
 function Projects() {
   const [currentSlide, setcurrentSlide] = useState(1);
   return (
-    <section className="mt-20 md:mt-96 px-[5vw] md:pe-0 md:ps-[10vw] relative">
+    <section className="mt-20 md:mt-96 px-[5vw] md:pe-0 md:ps-[10vw] relative" id="projects">
       <div className="flex md:gap-3 md:justify-end w-full flex-wrap">
         <div className="w-auto md:w-[10%] order-1 md:order-1 h-[50%] mt-64 ms-7 md:ms-0 flex flex-col gap-2 font-cormorant-garamond tracking-[.4rem] text-md uppercase -rotate-90 origin-left">
           <p className="border-b border-neutral-600 pb-2 w-fit pe-16">
