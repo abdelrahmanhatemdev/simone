@@ -2,10 +2,12 @@
 import { memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import {motion} from "motion/react"
 
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
+import { bounce, fade, fadeD1, fadeSlideDown, slideTop } from "@/lib/animation";
 
 const slides = [
   { name: "CATERINA ADOLFO", imageSrc: "hero-1", category: "Furnishing" },
@@ -19,6 +21,9 @@ const slides = [
 function Hero() {
   return (
     <div className="relative h-svh overflow-hidde">
+      <motion.div initial="hidden" whileInView="visible" variants={fade}>
+
+      
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
@@ -62,6 +67,7 @@ function Hero() {
           </SwiperSlide>
         ))}
       </Swiper>
+      </motion.div>
       <div className="absolute bottom-[36vh] start-[5vw] md:start-[27vw] z-10 bg-white h-[1px] w-[75vw] md:w-[62vw]"></div>
 
       <div className="absolute z-10 bottom-[10vh] end-[14vw] flex items-center gap-10 font-cormorant-garamond tracking-widest">
