@@ -1,7 +1,8 @@
 import { memo } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
-
+import dynamic from "next/dynamic";
+const SectionHeading = dynamic(() => import("@/components/custom/SectionHeading"))
 const news = [
   {
     title: "Grande Villa Modern Retreat",
@@ -30,10 +31,7 @@ const news = [
 function News() {
   return (
     <section className="mt-40 md:mt-[35vw] mx-5 flex flex-col items-end gap-10 md:gap-40" id="news">
-      <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase md:ms-20 md:me-24">
-        <p className="border-b border-neutral-600 pb-2 w-fit pe-20 md:pe-40">Our</p>
-        <p>News</p>
-      </div>
+      <SectionHeading first="Our" second="News" className=" md:ms-20 md:me-24"/>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 md:mx-[15vw]">
         {news.map((item, i) => (
           <article key={i} className="flex flex-col gap-8">

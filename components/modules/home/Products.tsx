@@ -7,6 +7,9 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
 import { HiOutlineSlash } from "react-icons/hi2";
+import {motion} from "framer-motion"
+import dynamic from "next/dynamic";
+const SectionHeading = dynamic(() => import("@/components/custom/SectionHeading"))
 
 const slides = [
   {
@@ -37,10 +40,7 @@ function Products() {
   const [currentSlide, setcurrentSlide] = useState(1);
   return (
     <section className="mt-20 md:mt-60 px-[5vw] md:px-[10vw] relative" id="products">
-      <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase  md:ms-20">
-        <p className="border-b border-neutral-600 pb-2 w-fit pe-16">Featured</p>
-        <p>Products</p>
-      </div>
+      <SectionHeading first="Featured" second="Products"/>
       <div className="w-full flex justify-center sm:justify-end gap-5 md:gap-20 font-cormorant-garamond text-[5vw] sm:text-[3vw] md:text-[1.3rem] mt-20 md:mt-40 sm:pe-20 font-black text-neutral-400">
         <p className="text-white">Furniture</p>
         <p>Furnitshing</p>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { memo } from "react";
-
+import dynamic from "next/dynamic";
+const SectionHeading = dynamic(() => import("@/components/custom/SectionHeading"))
 function About() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 w-full mt-40 md:mt-92 px-5 lg:p-10 gap-20 lg:gap-0" id="about">
@@ -14,12 +15,7 @@ function About() {
         />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-[30%_70%] items-center lg:p-10 gap-16">
-        <div className="flex flex-col gap-2 font-cormorant-garamond tracking-[.4rem] text-md uppercase lg:-rotate-90">
-          <p className="border-b border-neutral-600 pb-2 w-fit pe-16">
-            About
-          </p>
-          <p>Us</p>
-        </div>
+         <SectionHeading first="About" second="Us" className="lg:-rotate-90"/>
         <div className="flex flex-col gap-10 lg:gap-24">
           <h2 className="text-4xl">Luxury Furniture Retail Network</h2>
           <div className="flex flex-col gap-8">
