@@ -6,7 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { animate } from "@/lib/animation/animate";
-import Animate from "@/components/custom/Animate";
+import dynamic from "next/dynamic";
+const Animate = dynamic(() => import("@/components/custom/Animate"))
 
 const slides = [
   { name: "CATERINA ADOLFO", imageSrc: "hero-1", category: "Furnishing" },

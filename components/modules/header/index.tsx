@@ -12,14 +12,15 @@ const InStock = dynamic(
 const Brands = dynamic(
   () => import("@/components/modules/header/links/Brands")
 );
-import {motion} from "framer-motion"
 import { animate } from "@/lib/animation/animate";
+
+const Animate = dynamic(() => import("@/components/custom/Animate"))
 
 const fadeSlideUp = animate({type:"fadeSlideUp"})
 
 function Header() {
   return (
-    <motion.section className="fixed inset-0 z-20 flex justify-between mx-[5vw] md:mx-[8vw] mt-8 h-20" initial="hidden" whileInView="visible" variants={fadeSlideUp}>
+    <Animate className="fixed inset-0 z-20 flex justify-between mx-[5vw] md:mx-[8vw] mt-8 h-20" variants={fadeSlideUp}>
       <div className="flex gap-5 lg:gap-16 items-center lg:items-end">
         <Menu />
         <Search />
@@ -31,7 +32,7 @@ function Header() {
         <Brands />
         <InStock />
       </div>
-    </motion.section>
+    </Animate>
   );
 }
 export default memo(Header);

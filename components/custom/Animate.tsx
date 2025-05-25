@@ -9,6 +9,7 @@ interface AnimateOptions {
   variants: Variants;
   element?: MotionElementTag;
   className?: string;
+  viewOnce?: boolean;
 }
 
 const Animate = ({
@@ -16,6 +17,7 @@ const Animate = ({
   variants,
   element = "div",
   className,
+  viewOnce = false
 }: AnimateOptions) => {
   const MotionTag = motion[element];
 
@@ -23,7 +25,7 @@ const Animate = ({
     <MotionTag
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: viewOnce }}
       variants={variants}
       className={className}
     >

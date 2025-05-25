@@ -1,8 +1,9 @@
 "use client"
 import { cn } from "@/lib/utils";
 import { memo } from "react";
-import {motion } from "framer-motion"
 import { animate } from "@/lib/animation/animate";
+import dynamic from "next/dynamic";
+const Animate = dynamic(() => import("@/components/custom/Animate"))
 
 interface SectionHeadingType {
   first: string;
@@ -10,16 +11,16 @@ interface SectionHeadingType {
   className?: string;
 }
 
-const fillHorizontal = animate({type:"fillHorizontal"})
+const fillHorizontal = animate({type:"fillHorizontal", xTo:190, duration: 1})
 const fadeSlideUp = animate({type:"fadeSlideUp"})
 
 function SectionHeading({ first, second, className = "" }: SectionHeadingType) {
   return (
-    <motion.div initial="visible" whileDrag="hidden" variants={fadeSlideUp} className={cn("flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase md:ms-20", className)}>
+    <Animate variants={fadeSlideUp} className={cn("flex flex-col gap-2 font-cormorant-garamond tracking-[.2rem] text-lg uppercase md:ms-20", className)}>
       <p>{first}</p>
-      <motion.p initial="visible" whileDrag="hidden" variants={fillHorizontal} className="h-[1px] bg-neutral-600 w-[190px]"></motion.p>
+      <Animate variants={fillHorizontal} element="p" className="h-[1px] bg-neutral-600 w-[190px]"></Animate>
       <p>{second}</p>
-    </motion.div>
+    </Animate>
   );
 }
 export default memo(SectionHeading);
