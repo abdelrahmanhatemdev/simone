@@ -13,7 +13,9 @@ const Brands = dynamic(
   () => import("@/components/modules/header/links/Brands")
 );
 import {motion} from "framer-motion"
-import { fadeSlideUp } from "@/lib/animation";
+import { animate } from "@/lib/animation/animate";
+
+const fadeSlideUp = animate({type:"fadeSlideUp"})
 
 function Header() {
   return (
