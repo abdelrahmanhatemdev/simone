@@ -172,7 +172,11 @@ export const slideDown = {
 // Fade Slide
 export const fadeSlideDown = {
   visible: { opacity: opacityVisible, y: 0, transition: { duration } },
-  hidden: { opacity: opacityHidden, y: -200 },
+  hidden: { opacity: opacityHidden, y: -20 },
+};
+export const fadeSlideUp = {
+  visible: { opacity: opacityVisible, y: 0, transition: { duration } },
+  hidden: { opacity: opacityHidden, y: 20 },
 };
 
 // Bounce

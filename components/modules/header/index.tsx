@@ -1,3 +1,4 @@
+"use client"
 import { memo } from "react";
 import dynamic from "next/dynamic";
 
@@ -11,9 +12,12 @@ const InStock = dynamic(
 const Brands = dynamic(
   () => import("@/components/modules/header/links/Brands")
 );
+import {motion} from "framer-motion"
+import { fadeSlideUp } from "@/lib/animation";
+
 function Header() {
   return (
-    <section className="fixed inset-0 z-20 flex justify-between mx-[5vw] md:mx-[8vw] mt-8 h-20">
+    <motion.section className="fixed inset-0 z-20 flex justify-between mx-[5vw] md:mx-[8vw] mt-8 h-20" initial="hidden" whileInView="visible" variants={fadeSlideUp}>
       <div className="flex gap-5 lg:gap-16 items-center lg:items-end">
         <Menu />
         <Search />
@@ -25,7 +29,7 @@ function Header() {
         <Brands />
         <InStock />
       </div>
-    </section>
+    </motion.section>
   );
 }
 export default memo(Header);
