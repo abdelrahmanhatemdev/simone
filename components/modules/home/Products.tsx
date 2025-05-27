@@ -13,7 +13,6 @@ const SectionHeading = dynamic(() => import("@/components/custom/SectionHeading"
 const Animate = dynamic(() => import("@/components/custom/Animate"))
 
 const fadeSlideUp = animate({type:"fadeSlideUp"})
-const fadeSlideDown = animate({type:"fadeSlideDown"})
 const fadeSwiper1 = animate({type:"fade", duration: 1.2})
 const fadeSwiper2 = animate({type:"fade", duration: 1, delay: .2})
 const fadeSwiper3 = animate({type:"fade", duration: 1, delay: .3})
@@ -46,7 +45,9 @@ const slides = [
 ];
 
 function Products() {
+  
   const [currentSlide, setcurrentSlide] = useState(1);
+
   return (
     <section className="mt-20 md:mt-60 px-[5vw] md:px-[10vw] relative" id="products">
       <SectionHeading first="Featured" second="Products"/>
@@ -160,7 +161,7 @@ function Products() {
             </Swiper>
           </Animate>
         </div>
-        <Animate variants={fadeSlideDown} className="w-full flex items-center justify-center gap-2 tracking-widest">
+        <Animate variants={fadeSlideUp} className="w-full flex items-center justify-center gap-2 tracking-widest">
           <button className="products-prev-button cursor-pointer" aria-label="Prev">
             <IoChevronBackOutline size={30} />
           </button>
