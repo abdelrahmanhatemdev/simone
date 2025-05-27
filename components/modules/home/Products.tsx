@@ -9,6 +9,7 @@ import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
 import { HiOutlineSlash } from "react-icons/hi2";
 import dynamic from "next/dynamic";
 import { animate } from "@/lib/animation/animate";
+import { productsSlides } from "@/constants/productsSlides";
 const SectionHeading = dynamic(() => import("@/components/custom/SectionHeading"))
 const Animate = dynamic(() => import("@/components/custom/Animate"))
 
@@ -18,34 +19,8 @@ const fadeSwiper2 = animate({type:"fade", duration: 1, delay: .2})
 const fadeSwiper3 = animate({type:"fade", duration: 1, delay: .3})
 const fadeBackBox = animate({type:"fade", duration: 5})
 
-
-const slides = [
-  {
-    name: "MODERN SOFA",
-    imageSrc: "products-1",
-    category: "Cozy velvet seating",
-  },
-  {
-    name: "ELEGANT LAMP",
-    imageSrc: "products-2",
-    category: "Warm ambient light",
-  },
-  {
-    name: "WOODEN TABLE",
-    imageSrc: "products-3",
-    category: "Minimal rustic finish",
-  },
-  {
-    name: "WALL ART",
-    imageSrc: "products-4",
-    category: "Abstract canvas beauty",
-  },
-  { name: "RUG SET", imageSrc: "products-5", category: "Soft neutral tones" },
-  { name: "BOOKSHELF", imageSrc: "products-6", category: "Open sleek storage" },
-];
-
 function Products() {
-  
+
   const [currentSlide, setcurrentSlide] = useState(1);
 
   return (
@@ -73,10 +48,10 @@ function Products() {
               className="w-full h-full"
               speed={800}
               loop={true}
-              initialSlide={slides.length - 1}
+              initialSlide={productsSlides.length - 1}
               allowTouchMove={false}
             >
-              {slides.map((slide, index) => (
+              {productsSlides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="w-full h-full relative overflow-hidden">
                     <Image
@@ -107,7 +82,7 @@ function Products() {
               allowTouchMove={false}
               onSlideChange={(swiper) => setcurrentSlide(swiper.realIndex + 1)}
             >
-              {slides.map((slide, index) => (
+              {productsSlides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="w-full h-full relative overflow-hidden">
                     <Image
@@ -145,7 +120,7 @@ function Products() {
               initialSlide={1}
               allowTouchMove={false}
             >
-              {slides.map((slide, index) => (
+              {productsSlides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className="w-full h-full relative overflow-hidden">
                     <Image

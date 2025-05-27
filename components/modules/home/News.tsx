@@ -2,31 +2,15 @@ import { memo } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import dynamic from "next/dynamic";
+import { news } from "@/constants/news";
+import { animate } from "@/lib/animation/animate";
 const SectionHeading = dynamic(() => import("@/components/custom/SectionHeading"))
-const news = [
-  {
-    title: "Grande Villa Modern Retreat",
-    author: "Isabella",
-    date: "28 March 2024",
-    description:
-      "Step into a modern villa that redefines simplicity and luxury. Combining sleek design with inviting tones, this home offers serene elegance. Natural light floods through large windows. Every room is crafted to elevate comfort while maintaining an understated aesthetic. It's a space where modern architecture meets warm living.",
-  },
-  {
-    title: "Loft Serenity Urban Escape",
-    author: "Luca",
-    date: "15 April 2024",
-    description:
-      "This urban loft embraces creativity and comfort with a bold industrial flair. Exposed brick and steel frames contrast soft furnishings and warm lighting. The layout flows naturally, encouraging b and relaxation. Designed for modern professionals, it offers a haven amidst the city's buzz with open space and honest textures.",
-  },
-  {
-    title: "Casa Verde Eco Living",
-    author: "Sofia",
-    date: "2 May 2024",
-    description:
-      "Casa Verde is an oasis of calm rooted in sustainable living. Earth-toned finishes, airy spaces, and plant-filled corners celebrate nature. Built with environmental care, it promotes energy efficiency. Inside, the ambiance soothes with gentle light and organic textures. A retreat for those who seek mindful, nature-connected living.",
-  },
-];
+const Animate = dynamic(() => import("@/components/custom/Animate"))
 
+const fadeSlideUp = animate({type:"fadeSlideUp"})
+const fadeSlideUp1 = animate({type:"fadeSlideUp", duration: 1})
+const fade = animate({type:"fade", duration: 2, delay: .2})
+const fade1 = animate({type:"fade", duration: 2, delay: .2})
 
 function News() {
   return (
@@ -35,18 +19,20 @@ function News() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 md:mx-[15vw]">
         {news.map((item, i) => (
           <article key={i} className="flex flex-col gap-8">
-            <h3 className="text-4xl">{item.title}</h3>
+            <Animate variants={fadeSlideUp} className="text-4xl">{item.title}</Animate>
             <div className="flex flex-col gap-2">
-              <p className="text-neutral-400 tracking-wider text-xl">
+              <Animate variants={fadeSlideUp1} element="p" className="text-neutral-400 tracking-wider text-xl">
                 {item.author}, {item.date}
-              </p>
-              <p className="leading-6 md:leading-8 xl:leading-10">{item.description}</p>
+              </Animate>
+              <Animate variants={fade}  className="leading-6 md:leading-8 xl:leading-10">{item.description}</Animate>
             </div>
+            <Animate variants={fade1}>
+
             <a href="#">Read more</a>
+            </Animate>
           </article>
         ))}
       </div>
-      
     </section>
   );
 }

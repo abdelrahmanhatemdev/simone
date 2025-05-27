@@ -7,16 +7,8 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import { animate } from "@/lib/animation/animate";
 import dynamic from "next/dynamic";
+import { heroSlides } from "@/constants/heroSlides";
 const Animate = dynamic(() => import("@/components/custom/Animate"))
-
-const slides = [
-  { name: "CATERINA ADOLFO", imageSrc: "hero-1", category: "Furnishing" },
-  { name: "ENZO", imageSrc: "hero-2", category: "Spaces" },
-  { name: "SOFIA", imageSrc: "hero-3", category: "Product Design" },
-  { name: "LUCA", imageSrc: "hero-4", category: "Interior Design" },
-  { name: "GIULIA", imageSrc: "hero-5", category: "Lighting" },
-  { name: "MARCO", imageSrc: "hero-6", category: "Architecture" },
-];
 
 const fadeSlideDown = animate({ type: "fadeSlideDown" });
 const fadeSlideUp = animate({ type: "fadeSlideUp" });
@@ -46,7 +38,7 @@ function Hero() {
           speed={800}
           loop={true}
         >
-          {slides.map((slide, index) => (
+          {heroSlides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="w-full h-full relative">
                 <div className="peer w-[80vw] lg:w-[50vw] absolute z-10 bottom-[38vh] start-[5vw] md:start-[27vw] flex flex-col gap-4 lg:gap-[1vw]">

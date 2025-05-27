@@ -1,14 +1,6 @@
+import { contact } from "@/constants/contact";
 import { memo } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
-
-const contact = [
-  "3127 Doctors Drive",
-  "Los Angeles",
-  "California",
-  "+1-202-555-0186",
-  "+1-202-555-0111",
-  "info@paolosimone.com",
-];
 
 function Footer() {
   return (
