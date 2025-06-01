@@ -15,6 +15,7 @@ const Brands = dynamic(
 import { animate } from "@/lib/animation/animate";
 
 const Animate = dynamic(() => import("@/components/custom/Animate"))
+const ToggleThemeSwitch = dynamic(() => import("@/components/custom/ToggleThemeSwitch"))
 
 const fadeSlideUp = animate({type:"fadeSlideUp"})
 
@@ -31,6 +32,7 @@ function Header() {
       <div className="flex gap-5 lg:gap-16 items-center lg:items-end">
         <Brands />
         <InStock />
+        <ToggleThemeSwitch/>
       </div>
     </Animate>
   );
