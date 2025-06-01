@@ -15,24 +15,18 @@ function ToggleThemeSwitch() {
   if (!mounted) return null;
 
   return (
-      <button
-        onClick={toggleTheme}
-        className="flex justify-center items-center p-0 w-8 h-8"
-        aria-label="Theme Switch"
-        title="Switch Theme"
-      >
-        {theme !== "dark" && <div className="hover:bg-neutral-100 rounded p-1">
-          <IoMoonSharp
-            size={14}
-          />
-        </div>}
-        {theme === "dark" && <div className="hover:bg-neutral-700 rounded p-1">
-          <IoSunnyOutline
-            size={14}
-          />
-        </div>}
-        
-      </button>
+    <button
+      onClick={toggleTheme}
+      className="flex justify-center items-center p-0 cursor-pointer"
+      aria-label="Theme Switch"
+      title="Switch Theme"
+    >
+      {theme !== "dark" ? (
+        <IoMoonSharp size={20} />
+      ) : (
+        <IoSunnyOutline size={20} />
+      )}
+    </button>
   );
 }
 export default ToggleThemeSwitch;

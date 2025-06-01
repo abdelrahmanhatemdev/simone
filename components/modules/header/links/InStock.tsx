@@ -16,7 +16,7 @@ function InStock() {
           aria-label="In Stock"
         >
           <IoLockOpen />
-          <span className="uppercase text-neutral-400 tracking-widest text-sm hidden lg:block">
+          <span className="uppercase dark:text-neutral-400 text-neutral-600 tracking-widest text-sm hidden lg:block">
             In Stock
           </span>
         </button>
@@ -27,7 +27,7 @@ function InStock() {
           <DrawerClose asChild className="flex justify-end">
             <div className="flex gap-3 items-center cursor-pointer">
               <FaTimes />
-              <span className="uppercase text-neutral-400 tracking-wide">
+              <span className="uppercase  font-bold dark:font-medium text-black dark:text-neutral-400 tracking-wide">
                 Close
               </span>
             </div>

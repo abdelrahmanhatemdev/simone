@@ -144,7 +144,7 @@ function Projects() {
             <div className="flex gap-2 text-lg items-center justify-center">
               <span>{currentSlide}</span>
               <HiOutlineSlash size={25} />
-              <span className=" text-neutral-500">3</span>
+              <span className=" text-neutral-700 dark:text-neutral-500 ">3</span>
             </div>
             <button
               className="products-next-button cursor-pointer"

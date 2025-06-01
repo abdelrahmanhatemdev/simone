@@ -20,7 +20,7 @@ function News() {
           <article key={i} className="flex flex-col gap-8">
             <Animate variants={fadeSlideDown} className="text-4xl">{item.title}</Animate>
             <div className="flex flex-col gap-2">
-              <Animate variants={fadeSlideDown1} element="p" className="text-neutral-400 tracking-wider text-xl">
+              <Animate variants={fadeSlideDown1} element="p" className="dark:text-neutral-400 text-neutral-600 tracking-wider text-xl">
                 {item.author}, {item.date}
               </Animate>
               <Animate variants={fadeSlideDown2}  className="leading-6 md:leading-8 xl:leading-10">{item.description}</Animate>

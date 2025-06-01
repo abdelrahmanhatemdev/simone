@@ -18,7 +18,7 @@ function Brands() {
             aria-label="Brands"
           >
             <PiSquaresFourThin size={25} />
-            <span className="uppercase text-neutral-400 tracking-widest text-sm hidden lg:block">
+            <span className="uppercase dark:text-neutral-400 text-neutral-600 tracking-widest text-sm hidden lg:block">
               Brands
             </span>
           </button>
@@ -28,7 +28,7 @@ function Brands() {
         <DrawerClose asChild>
           <div className="flex gap-3 items-center cursor-pointer">
             <FaTimes />
-            <span className="uppercase text-neutral-400 tracking-wide font-cormorant-garamond">
+            <span className="uppercase font-bold dark:font-medium text-black dark:text-neutral-400 tracking-wide font-cormorant-garamond">
               Close
             </span>
           </div>
@@ -42,10 +42,10 @@ function Brands() {
                   width={700}
                   src={brand.image}
                   alt=""
-                  className="w-[100vw] md:max-w-[700px] rounded-md border-8 border-neutral-600"
+                  className="w-[100vw] md:max-w-[700px] rounded-md border-8 border-neutral-200 dark:border-neutral-600"
                 />
               </div>
-              <h3 className="text-3xl border-b border-neutral-500 w-full text-center pb-5 font-cormorant-garamond">
+              <h3 className="text-3xl border-b border-neutral-200 dark:border-neutral-500 w-full text-center pb-5 font-cormorant-garamond">
                 {brand.name}
               </h3>
               <p className="font-rajdhani">{brand.major}</p>

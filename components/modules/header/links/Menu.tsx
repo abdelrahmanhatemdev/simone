@@ -13,9 +13,9 @@ function Menu() {
           className="group cursor-pointer flex flex-col gap-3 lg:gap-4 w-12 lg:w-16 justify-center"
           aria-label="Menu"
         >
-          <span className="w-[70%] h-[2px] bg-white block"></span>
-          <span className="w-[70%] h-[1px] bg-white block group-hover:ms-3 lg:group-hover:ms-5 transition-all duration-300"></span>
-          <span className="w-[70%] h-[1px] bg-white block"></span>
+          <span className="w-[70%] h-[2px] bg-foreground dark:bg-foreground block"></span>
+          <span className="w-[70%] h-[1px] bg-foreground dark:bg-foreground block group-hover:ms-3 lg:group-hover:ms-5 transition-all duration-300"></span>
+          <span className="w-[70%] h-[1px] bg-foreground dark:bg-foreground block"></span>
         </button>
       }
     >
@@ -24,7 +24,7 @@ function Menu() {
           <DrawerClose asChild>
             <div className="flex gap-3 items-center cursor-pointer">
               <FaTimes />
-              <span className="uppercase text-neutral-400 tracking-wide font-cormorant-garamond">
+              <span className="uppercase  font-bold dark:font-medium text-black dark:text-neutral-400 tracking-wide font-cormorant-garamond">
                 Close
               </span>
             </div>

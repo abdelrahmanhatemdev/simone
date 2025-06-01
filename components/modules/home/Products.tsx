@@ -27,8 +27,8 @@ function Products() {
     <section className="mt-20 md:mt-60 px-[5vw] md:px-[10vw] relative" id="products">
       <SectionHeading first="Featured" second="Products"/>
       
-      <Animate variants={fadeSlideUp} className="w-full flex justify-center sm:justify-end gap-5 md:gap-20 font-cormorant-garamond text-[5vw] sm:text-[3vw] md:text-[1.3rem] mt-20 md:mt-40 sm:pe-20 font-black text-neutral-400">
-        <p className="text-white">Furniture</p>
+      <Animate variants={fadeSlideUp} className="w-full flex justify-center sm:justify-end gap-5 md:gap-20 font-cormorant-garamond text-[5vw] sm:text-[3vw] md:text-[1.3rem] mt-20 md:mt-40 sm:pe-20 font-black dark:text-neutral-400 text-neutral-600">
+        <p className="text-black dark:text-white">Furniture</p>
         <p>Furnitshing</p>
         <p>Lighting</p>
       </Animate>
@@ -92,7 +92,7 @@ function Products() {
                       width={1920}
                       className="h-full object-cover"
                     />
-                    <div className="w-[80%] flex flex-col gap-1 absolute z-10 bottom-[5%] start-[5%]">
+                    <div className="w-[80%] flex flex-col gap-1 absolute z-10 bottom-[5%] start-[5%] text-white">
                       <h3 className="font-black font-cormorant-garamond text-[5vw] md:text-[2vw] leading-[5vw] md:leading-[2vw]">
                         {slide.name}
                       </h3>
@@ -143,7 +143,7 @@ function Products() {
           <div className="flex gap-2 text-lg items-center justify-center">
             <span>{currentSlide}</span>
             <HiOutlineSlash size={25} />
-            <span className=" text-neutral-500">6</span>
+            <span className=" text-neutral-700 dark:text-neutral-500 ">6</span>
           </div>
           <button className="products-next-button cursor-pointer" aria-label="Next">
             <IoChevronForwardOutline size={30} />

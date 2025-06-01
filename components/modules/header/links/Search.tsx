@@ -14,7 +14,7 @@ function Search() {
           aria-label="Search"
         >
           <FaSearch />
-          <span className="uppercase text-neutral-400 tracking-widest text-sm hidden lg:block">
+          <span className="uppercase dark:text-neutral-400 text-neutral-600 tracking-widest text-sm hidden lg:block">
             Search
           </span>
         </button>
@@ -24,7 +24,7 @@ function Search() {
         <DrawerClose asChild>
           <div className="flex gap-3 items-center cursor-pointer">
             <FaTimes />
-            <span className="uppercase text-neutral-400 tracking-wide font-cormorant-garamond">
+            <span className="uppercase  font-bold dark:font-medium text-black dark:text-neutral-400 tracking-wide font-cormorant-garamond">
               Close
             </span>
           </div>

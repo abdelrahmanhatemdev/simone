@@ -15,7 +15,7 @@ const fadeSlideUp = animate({ type: "fadeSlideUp" });
 
 function Hero() {
   return (
-    <div className="relative h-svh overflow-hidde">
+    <div className="relative h-svh overflow-hidde text-white">
       <Animate variants={fadeSlideDown}>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -42,7 +42,7 @@ function Hero() {
             <SwiperSlide key={index}>
               <div className="w-full h-full relative">
                 <div className="peer w-[80vw] lg:w-[50vw] absolute z-10 bottom-[38vh] start-[5vw] md:start-[27vw] flex flex-col gap-4 lg:gap-[1vw]">
-                  <span className="font-rajdhani lg:text-[1.5vw] md:text-[2.5vw] tracking-widest">
+                  <span className="font-rajdhani lg:text-[1.5vw] md:text-[2.5vw] tracking-widest ">
                     {slide.category}
                   </span>
                   <h3 className="font-black text-[15vw] sm:lg:text-[5.2vw] leading-[15vw] sm:leading-[8vw] lg:leading-[5.5vw] font-cormorant-garamond max-w-64 relative hover:cursor-pointer">
@@ -54,7 +54,7 @@ function Hero() {
                   alt=""
                   height={1080}
                   width={1920}
-                  className="opacity-80 h-full object-cover transition-transform duration-1000 ease-in-out peer-hover:scale-105"
+                  className="opacity-100 h-full object-cover transition-transform duration-1000 ease-in-out peer-hover:scale-105"
                 />
               </div>
             </SwiperSlide>
