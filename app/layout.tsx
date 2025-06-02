@@ -16,9 +16,15 @@ const cormorantGaramond = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Polo Simone",
-  description:
-    "Polo Siomone is a creative interior design brand redefining modern living through bold aesthetics and thoughtful craftsmanship. We blend art, architecture, and emotion to create timeless spaces that speak your style. From concept to execution, every detail reflects a curated balance of innovation, comfort, and elegance.",
+  title: `Paolo Simone | Italian Furniture Agency`,
+ description:
+    "Paolo Siomone is a creative interior design brand redefining modern living through bold aesthetics and thoughtful craftsmanship. We blend art, architecture, and emotion to create timeless spaces that speak your style. From concept to execution, every detail reflects a curated balance of innovation, comfort, and elegance.",
+ icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -26,7 +32,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <Providers>
       <html lang="en" className="scroll-smooth">
