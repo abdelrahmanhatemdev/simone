@@ -53,9 +53,10 @@ function Hero() {
                   src={`/hero/${slide.imageSrc}.webp`}
                   alt=""
                   fill
-                  priority={index === 0}
+                  // priority={index === 0}
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 50vw"
                   className="object-cover transition-transform duration-1000 ease-in-out peer-hover:scale-105"
+                  decoding="async"
                 />
               </div>
             </SwiperSlide>
