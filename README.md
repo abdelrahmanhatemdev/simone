@@ -44,6 +44,12 @@ To create a timeless online presence for an Italian interior agency that focuses
 - 🖼️ Optimized images using Next.js image component  
 - 🎯 Smooth UX with Framer Motion and hardware-accelerated animations  
 
----
+<img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/pass.png" alt="Performance Passed" align="center"> Performance \
+<img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/pass.png" alt="Accessibility Passed" align="center"> Accessibility \
+<img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/pass.png" alt="Best Practices Passed" align="center"> Best Practices \
+<img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/pass.png" alt="SEO Passed" align="center"> SEO \
+<img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/pass.png" alt="PWA Passed" align="center"> PWA
 
-Let me know if you'd like badges, multilingual support (e.g. 🇮🇹 Italian), or deployment instructions next.
+
+ ## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/license.png" alt="License" align="center"> License
+[<img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/mit.png" alt="License" align="center">](https://opensource.org/license/mit)
