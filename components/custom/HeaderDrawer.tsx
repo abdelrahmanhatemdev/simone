@@ -19,6 +19,7 @@ function HeaderDrawer({
   modal= false,
   children,
 }: HeaderDrawerType) {
+  throw Error("Here is Error")
   return (
     <Drawer direction="top" modal={modal}>
       <DrawerTrigger asChild>{trigger}</DrawerTrigger>
