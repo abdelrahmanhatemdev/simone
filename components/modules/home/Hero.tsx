@@ -8,7 +8,7 @@ import Image from "next/image";
 import { animate } from "@/lib/animation/animate";
 import dynamic from "next/dynamic";
 import { heroSlides } from "@/constants/heroSlides";
-const Animate = dynamic(() => import("@/components/custom/Animate"))
+const Animate = dynamic(() => import("@/components/custom/Animate"));
 
 const fadeSlideDown = animate({ type: "fadeSlideDown" });
 const fadeSlideUp = animate({ type: "fadeSlideUp" });
@@ -54,6 +54,8 @@ function Hero() {
                   alt=""
                   height={1080}
                   width={1920}
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1920px"
                   className="opacity-100 h-full object-cover transition-transform duration-1000 ease-in-out peer-hover:scale-105"
                 />
               </div>
