@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Simone
 
-## Getting Started
+Simone is a modern and responsive personal portfolio web application.
 
-First, run the development server:
+<img src="https://abdelrahmanhatemdev.github.io/images/images/mega/simone.webp" alt="Simone" align="center"> 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/link.png" alt="Link" align="center">  Link
+[Live Link](https://simone-portfolio.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/description.png" alt="Description" align="center">  Description
+Simone is a sleek personal portfolio built with Next.js and Tailwind CSS, designed to showcase skills, projects, and contact information in a stylish and accessible layout. It features a fully responsive design, clean animations, and dynamic project data.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/motivation.png" alt="Motivation" align="center"> Motivation
+To create a visually striking and performance-optimized portfolio that reflects creativity, professionalism, and modern frontend practices.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/stack.png" alt="Stack" align="center"> Stack
 
-## Learn More
+[<img src="https://abdelrahmanhatemdev.github.io/images/images/stack_frames/nextjs.webp" alt="Nextjs" title="Nextjs">](https://nextjs.org/) &ensp;
+[<img src="https://abdelrahmanhatemdev.github.io/images/images/stack_frames/react.webp" alt="React" title="React">](https://react.dev/) &ensp;
+[<img src="https://abdelrahmanhatemdev.github.io/images/images/stack_frames/tailwind.webp" alt="Tailwind" title="Tailwind">](https://tailwindcss.com/) &ensp;
+[<img src="https://abdelrahmanhatemdev.github.io/images/images/stack_frames/framer.webp" alt="Framer Motion" title="Framer Motion">](https://www.framer.com/motion/) &ensp;
+[<img src="https://abdelrahmanhatemdev.github.io/images/images/stack_frames/eslint.webp" alt="ESLint" title="ESLint">](https://eslint.org/) &ensp;
+[<img src="https://abdelrahmanhatemdev.github.io/images/images/stack_frames/vercel.webp" alt="Vercel" title="Vercel">](https://vercel.com/) &ensp;
 
-To learn more about Next.js, take a look at the following resources:
+## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/features.png" alt="Features" align="center"> Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| **Category**  | **Features**  |
+|---|---|
+| **Pages** | Home, About, Projects, Contact |
+| **Animations** | Smooth entry and transition animations via Framer Motion |
+| **Responsiveness** | Mobile-first, fully responsive layout |
+| **Accessibility** | Keyboard navigation, semantic HTML, ARIA support |
+| **SEO** | Optimized metadata and open graph integration |
+| **Performance** | Image optimization, code splitting, lazy loading |
+| **Project Management** | Dynamic project list from JSON/data file |
+| **Forms** | Contact form with validation and email integration |
+| **Dark Mode** | Toggleable dark/light themes with persistence |
+| **Deployment** | Hosted on Vercel with CI/CD setup |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/folder.png" alt="Folder" align="center"> Folder Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

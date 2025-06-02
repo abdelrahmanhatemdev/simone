@@ -1,22 +1,13 @@
-"use client";
 import Logo from "@/components/custom/Logo";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
 
 export const metadata: Metadata = {
-  title: "Something Wrong!"
+  title: "404 Page"
 }
 
-export default function Error({
-  error,
-}: {
-  error: Error & { digest?: string };
-}) {
-  useEffect(() => {
-    console.error(error);
-  }, [error]);
+export default function NotFound() {
 
   return (
     <div className="w-full h-[100svh] flex flex-col justify-center items-center relative">
@@ -42,8 +33,8 @@ export default function Error({
           className="flex flex-col gap-4 items-center justify-center rounded-2xl min-w-fit w-full z-10 p-4 grow bg-black/50 text-center"
     
         >
-          <p className="text-xl font-bold">Something went wrong!</p>
-          {error.message}
+          <p className="text-xl font-bold">Not Found!</p>
+          404 Page!
         </div>
       </div>
     </div>
