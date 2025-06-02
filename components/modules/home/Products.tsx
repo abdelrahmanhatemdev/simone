@@ -60,6 +60,8 @@ function Products() {
                       height={1080}
                       width={1920}
                       className="h-full object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      priority={index === 0}
                     />
                   </div>
                 </SwiperSlide>
@@ -90,6 +92,8 @@ function Products() {
                       alt=""
                       height={1080}
                       width={1920}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      priority={index === 0}
                       className="h-full object-cover"
                     />
                     <div className="w-[80%] flex flex-col gap-1 absolute z-10 bottom-[5%] start-[5%] text-white">
@@ -128,6 +132,8 @@ function Products() {
                       alt=""
                       height={1080}
                       width={1920}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      priority={index === 0}
                       className="h-full object-cover"
                     />
                   </div>
