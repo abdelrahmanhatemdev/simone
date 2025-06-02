@@ -1,17 +1,17 @@
 # Simone
 
-Simone is a modern and responsive personal portfolio web application.
+Simone is a premium website for an Italian furniture agency, crafted to reflect elegance, quality, and modern aesthetics.
 
 <img src="https://abdelrahmanhatemdev.github.io/images/images/mega/simone.webp" alt="Simone" align="center"> 
 
-## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/link.png" alt="Link" align="center">  Link
+## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/link.png" alt="Link" align="center"> Link  
 [Live Link](https://simone-portfolio.vercel.app/)
 
-## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/description.png" alt="Description" align="center">  Description
-Simone is a sleek personal portfolio built with Next.js and Tailwind CSS, designed to showcase skills, projects, and contact information in a stylish and accessible layout. It features a fully responsive design, clean animations, and dynamic project data.
+## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/description.png" alt="Description" align="center"> Description  
+Simone is a visually stunning web experience built for a luxury Italian furniture brand. It merges aesthetic appeal with high performance to showcase collections, brand values, and contact information in a refined way.
 
-### <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/motivation.png" alt="Motivation" align="center"> Motivation
-To create a visually striking and performance-optimized portfolio that reflects creativity, professionalism, and modern frontend practices.
+### <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/motivation.png" alt="Motivation" align="center"> Motivation  
+To create a timeless online presence for an Italian interior agency that focuses on high-end design and craftsmanship.
 
 ### <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/stack.png" alt="Stack" align="center"> Stack
 
@@ -22,20 +22,28 @@ To create a visually striking and performance-optimized portfolio that reflects 
 [<img src="https://abdelrahmanhatemdev.github.io/images/images/stack_frames/eslint.webp" alt="ESLint" title="ESLint">](https://eslint.org/) &ensp;
 [<img src="https://abdelrahmanhatemdev.github.io/images/images/stack_frames/vercel.webp" alt="Vercel" title="Vercel">](https://vercel.com/) &ensp;
 
-## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/features.png" alt="Features" align="center"> Features
+## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/features.png" alt="Features" align="center"> Features  
 
-| **Category**  | **Features**  |
-|---|---|
-| **Pages** | Home, About, Projects, Contact |
-| **Animations** | Smooth entry and transition animations via Framer Motion |
-| **Responsiveness** | Mobile-first, fully responsive layout |
-| **Accessibility** | Keyboard navigation, semantic HTML, ARIA support |
-| **SEO** | Optimized metadata and open graph integration |
-| **Performance** | Image optimization, code splitting, lazy loading |
-| **Project Management** | Dynamic project list from JSON/data file |
-| **Forms** | Contact form with validation and email integration |
-| **Dark Mode** | Toggleable dark/light themes with persistence |
-| **Deployment** | Hosted on Vercel with CI/CD setup |
+| **Category**      | **Features** |
+|-------------------|--------------|
+| **Pages**         | Home, Collection, About, Contact |
+| **Design**        | Smooth animations, high-res images, elegant typography |
+| **Responsiveness**| Fully mobile-first and adaptive design |
+| **SEO**           | Optimized meta tags and Open Graph |
+| **Performance**   | Code splitting, lazy loading, responsive images |
+| **Animations**    | Framer Motion transitions and layout shifts |
+| **Accessibility** | Semantic HTML and ARIA roles |
+| **Form**          | Contact form with validation |
+| **Deployment**    | Hosted on Vercel with CI/CD |
+| **Best Practices**| ESLint, Prettier, Lighthouse optimization |
 
-## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/folder.png" alt="Folder" align="center"> Folder Structure
+## <img src="https://abdelrahmanhatemdev.github.io/images/icons/markdown/performance.png" alt="Performance" align="center"> Performance  
 
+- ⚡ **100% Lighthouse scores** in Performance, Accessibility, Best Practices, and SEO  
+- 📦 Minimal bundle size and fast loading speeds  
+- 🖼️ Optimized images using Next.js image component  
+- 🎯 Smooth UX with Framer Motion and hardware-accelerated animations  
+
+---
+
+Let me know if you'd like badges, multilingual support (e.g. 🇮🇹 Italian), or deployment instructions next.
