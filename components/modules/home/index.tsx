@@ -1,10 +1,11 @@
+'use client';
 import dynamic from "next/dynamic";
 import { memo } from "react";
 
-const Hero = dynamic(() => import("@/components/modules/home/Hero"));
-const Products = dynamic(() => import("@/components/modules/home/Products"));
+const Hero = dynamic(() => import("@/components/modules/home/Hero"), {ssr: false});
+const Products = dynamic(() => import("@/components/modules/home/Products"), {ssr: false});
 const Gallery = dynamic(() => import("@/components/modules/home/Gallery"));
-const Projects = dynamic(() => import("@/components/modules/home/Projects"));
+const Projects = dynamic(() => import("@/components/modules/home/Projects"), {ssr: false});
 const News = dynamic(() => import("@/components/modules/home/News"));
 const Sample = dynamic(() => import("@/components/modules/home/Sample"));
 const About = dynamic(() => import("@/components/modules/home/About"));
