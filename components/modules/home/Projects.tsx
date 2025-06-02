@@ -179,6 +179,8 @@ function Projects() {
                       alt=""
                       height={1080}
                       width={1920}
+                      priority={index === 0}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="h-full object-cover opacity-90"
                     />
                   </div>
