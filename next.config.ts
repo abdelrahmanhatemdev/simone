@@ -1,8 +1,15 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  compiler: {
+    // Remove console.log in production
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  experimental: {
+    // Use modern JavaScript features
+    esmExternals: true,
+  },
+  // Set target to modern browsers
+  target: 'serverless',
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  swcMinify: true,
-};
-
-export default nextConfig;
+module.exports = nextConfig
