@@ -26,7 +26,7 @@ To create a timeless online presence for an Italian interior agency that focuses
 
 | **Category**      | **Features** |
 |-------------------|--------------|
-| **Pages**         | Home, Collection, About, Contact |
+| **Sections**         | Home, Collection, About, Contact |
 | **Design**        | Smooth animations, high-res images, elegant typography |
 | **Responsiveness**| Fully mobile-first and adaptive design |
 | **SEO**           | Optimized meta tags and Open Graph |
