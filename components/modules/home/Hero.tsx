@@ -5,13 +5,11 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
-import { animate } from "@/lib/animation/animate";
 import dynamic from "next/dynamic";
 import { heroSlides } from "@/constants/heroSlides";
+import { fadeSlideDown, fadeSlideUp } from "@/lib/animation";
 const Animate = dynamic(() => import("@/components/custom/Animate"));
 
-const fadeSlideDown = animate({ type: "fadeSlideDown" });
-const fadeSlideUp = animate({ type: "fadeSlideUp" });
 
 function Hero() {
   return (

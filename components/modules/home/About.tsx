@@ -1,19 +1,21 @@
 import Image from "next/image";
 import { memo } from "react";
 import dynamic from "next/dynamic";
+import { fadeDu1D1, fadeSlideUp, fadeSlideUp2 } from "@/lib/animation";
 import { animate } from "@/lib/animation/animate";
 const SectionHeading = dynamic(() => import("@/components/custom/SectionHeading"))
 const Animate = dynamic(() => import("@/components/custom/Animate"))
 
-const fadeSlideUp = animate({type:"fadeSlideUp"})
-const fadeSlideUp1 = animate({type:"fadeSlideUp", duration: 1})
-const fadeSlideUp2 = animate({type:"fadeSlideUp", duration: 1.2})
-const fade = animate({type:"fade", duration: 2, delay: .2})
-
+const fillVertical = animate({
+  type: "fillVertical",
+  duration: 2,
+  yFrom: .8, 
+  yTo: 1
+});
 function About() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 w-full mt-40 md:mt-92 px-5 lg:p-10 gap-20 lg:gap-0" id="about">
-      <Animate variants={fade} className="w-full md:w-[45vw] md:h-[55vw] ">
+      <Animate variants={fadeDu1D1} className="w-full md:w-[45vw] md:h-[55vw] ">
         <Image
           src={`/about/about.webp`}
           alt=""
@@ -27,7 +29,7 @@ function About() {
         <div className="flex flex-col gap-10 lg:gap-24">
           <Animate variants={fadeSlideUp} element="h2" className="text-4xl">Luxury Furniture Retail Network</Animate>
           <div className="flex flex-col gap-8">
-            <Animate variants={fadeSlideUp1} element="p" className="leadin-6 md:leading-8 leading-10">
+            <Animate variants={fillVertical} element="p" className="leadin-6 md:leading-8 leading-10">
               A premium network of retail stores and showrooms specializing in
               high-end, designer furniture and home décor. It connects
               discerning customers with exclusive brands, offering elegant

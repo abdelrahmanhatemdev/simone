@@ -10,10 +10,10 @@ import { HiOutlineSlash } from "react-icons/hi2";
 import dynamic from "next/dynamic";
 import { animate } from "@/lib/animation/animate";
 import { productsSlides } from "@/constants/productsSlides";
+import { fadeSlideUp } from "@/lib/animation";
 const SectionHeading = dynamic(() => import("@/components/custom/SectionHeading"))
 const Animate = dynamic(() => import("@/components/custom/Animate"))
 
-const fadeSlideUp = animate({type:"fadeSlideUp"})
 const fadeSwiper1 = animate({type:"fade", duration: 1.2})
 const fadeSwiper2 = animate({type:"fade", duration: 1, delay: .2})
 const fadeSwiper3 = animate({type:"fade", duration: 1, delay: .3})

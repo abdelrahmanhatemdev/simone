@@ -1,14 +1,11 @@
 import { contact } from "@/constants/contact";
-import { animate } from "@/lib/animation/animate";
+import { fadeSlideDown, fadeSlideDown1, fadeSlideDown2, fadeSlideDown3 } from "@/lib/animation";
 import dynamic from "next/dynamic";
 import { memo } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
 const Animate = dynamic(() => import("@/components/custom/Animate"));
  
-const fadeSlideDown = animate({ type: "fadeSlideDown"});
-const fadeSlideDown1 = animate({ type: "fadeSlideDown", delay: .4});
-const fadeSlideDown2 = animate({ type: "fadeSlideDown", delay: .5});
-const fadeSlideDown3 = animate({ type: "fadeSlideDown", delay: .6});
+
 
 function Footer() {
   return (

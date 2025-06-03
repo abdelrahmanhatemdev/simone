@@ -1,6 +1,7 @@
 "use client";
 import { memo } from "react";
 import dynamic from "next/dynamic";
+import { fadeSlideUp } from "@/lib/animation";
 
 const Menu = dynamic(() => import("@/components/modules/header/links/Menu"));
 const Search = dynamic(
@@ -12,7 +13,6 @@ const InStock = dynamic(
 const Brands = dynamic(
   () => import("@/components/modules/header/links/Brands")
 );
-import { animate } from "@/lib/animation/animate";
 
 const Animate = dynamic(() => import("@/components/custom/Animate"));
 const ToggleThemeSwitch = dynamic(
@@ -20,7 +20,6 @@ const ToggleThemeSwitch = dynamic(
 );
 const Logo = dynamic(() => import("@/components/custom/Logo"));
 
-const fadeSlideUp = animate({ type: "fadeSlideUp" });
 
 function Header() {
   return (
